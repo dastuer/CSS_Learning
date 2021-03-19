@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: pink;
+            text-decoration: none;
+            margin-right: 5px;
+            font: bold 20px/50px Arial;
+        }
+        /* 属性选择器格式 a[]{}*/
+        /* [属性名 = 属性值(正则表达)]
+        = 绝对相等
+        *= 包含
+        ^= 以什么开头
+        != 以什么结尾
+         */
+        a[class*="links"]{
+            background: blueviolet;
+        }
+        a[id=first]{
+            background: green;
+        }
+        a[href^="/"]{
+            background: purple;
+        }
+        a[href $= "jpg"]{
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <p class="demo">
+        <a href="https://www.baidu.com"class="links item first"id="first">1</a>
+        <a href="" class="links item active" target="_blank" title="test">2</a>
+        <a href="image/123.html" class="links item">3</a>
+        <a href="image/123.png">4</a>
+        <a href="image/123.jpg">5</a>
+        <a href="abc" class="link items">6</a>
+        <a href="/a.pdf">7</a>
+        <a href="abc.doc">8</a>
+        <a href="abcd.doc">9</a>
+        <a href="/abc.pdf">10</a>
+    </p>
+</body>
+</html>
