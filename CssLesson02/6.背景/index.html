@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 1242px;
+            height: 1915px;
+            border: 1px solid red;
+            background-image: url("image/img1.jpeg");
+        }
+        /*默认是全部平铺 repeat */
+        .div1{
+            /*X方向重复*/
+            background-repeat: repeat-x;
+        }
+        .div2{
+            /*Y方向重复*/
+            background-repeat: repeat-y;
+        }
+        .div3{
+            /*不重复*/
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+</body>
+</html>

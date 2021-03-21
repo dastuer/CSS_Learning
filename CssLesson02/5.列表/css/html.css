@@ -1,0 +1,38 @@
+#nav{
+    width: 278px;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    /*颜色 背景图位置 平铺方式*/
+    background: white url("../image/img.png") 249px 6px no-repeat;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkorange;
+}
+ul{
+    background: purple;
+}
+a:hover{
+    text-decoration: underline;
+    color: #2700ff;
+}
+/*
+list-style:
+none 去掉圆
+decimal 数字
+square 方形
+circle 空心圆
+*/
+ul li{
+    line-height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("../image/img_r.png");
+    background-repeat: no-repeat;
+    background-position: 207px 4px;
+}

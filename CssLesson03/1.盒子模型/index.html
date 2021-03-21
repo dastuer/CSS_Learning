@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--外边距妙用，居中-->
+    <style>
+        /*body,h1,li,a{*/
+        /*将边距设置为0*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    text-decoration: none;*/
+        /*}*/
+        h2{
+            font-size: 16px;
+            font-family: Microsoft YaHei,Arial,sans-serif;
+            color: #4163e2;
+            text-align: center;
+            background: #fff;
+            /*
+            margin: 所有边
+            margin: 上下 左右
+            margin: 上 右 下 左 (顺时针)*/
+
+
+            margin: 0;
+
+            line-height: 30px;
+
+        }
+        #box{
+                /*border:粗细 样式 颜色*/
+            width: 300px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        form{
+            background: #62ffa4;
+        }
+        div:nth-of-type(1)>span{
+            border: 1px solid #bdbdbd;
+            font-size: 15px;
+            height: 30px;
+            line-height: 30px;
+        }
+        div:nth-of-type(2)>span{
+            border: 1px solid #bdbdbd;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        div:nth-of-type(1)>input{
+            border: 1px solid #bdbdbd;
+            height: 20px;
+            line-height: 30px;
+        }
+        div:nth-of-type(2)>input{
+            border: 1px solid #bdbdbd;
+            height: 20px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <h2>账户登录</h2>
+    <form action="#">
+        <div>
+            <span>用户名</span>
+            <input type="text" placeholder="邮箱/用户名/登录手机">
+        </div>
+        <div>
+            <span>密码</span>
+            <input type="password" placeholder="密码">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--
+颜色：单词描述
+     RGB ：#000000~#FFFFFF或rgb(0~255,0~255,0~255)
+     RGBA ：RGB + A(透明度0~1)
+     rgba(0~255,0~255,0~255,0~1)
+排版：text-align:center|left|right
+首行缩进：text-indent:2em (2个字体)
+行高(line-height)块高(height)一致可以上下居中
+    -->
+    <style>
+        h1{
+            color:rgba(0,255,255,0.7);
+            text-align: center;
+        }
+        .p1{
+            text-indent: 2em;
+        }
+        .p3{
+            background: darkkhaki;
+            height: 50px;
+            line-height: 50px;
+        }
+        /*下划线*/
+        .l1{
+            text-decoration: underline;
+        }
+        /*中划线*/
+        .l2{
+            text-decoration: line-through;
+        }
+        /*上划线*/
+        .l3{
+            text-decoration: overline;
+        }
+        /*a标签去下划线*/
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<p class="l1">underline</p>
+<p class="l2">line-through</p>
+<p class="l3">overline</p>
+<h1>什么是 CSS？</h1>
+<p class="p1">CSS 指的是层叠样式表* (Cascading Style Sheets)</p>
+<p>CSS 描述了如何在屏幕、纸张或其他媒体上显示 HTML 元素</p>
+<p class="p3">Early in the day it was whispered that we
+    should sail in a boat, only thou and I, and never a soul
+    in the world would know of this our pilgrimage to no country
+    and to no end.</p>
+</body>
+</html>

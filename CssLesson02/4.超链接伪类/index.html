@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*默认颜色*/
+        a{
+            text-decoration: none;
+            color: greenyellow;
+        }
+        /*鼠标悬浮效果*/
+        a:hover{
+            color: #db6052;
+            text-decoration: underline;
+            font-size: 40px;
+        }
+        /*鼠标按住未释放*/
+        a:active{
+            color: black;
+        }
+        /*未访问链接属性*/
+        a:link{
+            color: brown;
+        }
+        /*已经访问链接属性*/
+        a:visited{
+            color: gray;
+        }
+        /*text-shadow: 阴影颜色 水平偏移 垂直偏移 阴影半径*/
+        #copy{
+            text-shadow: aqua 10px -10px 1px;
+        }
+
+    </style>
+</head>
+<body>
+<a href="#">
+    <img src="image/img.png" alt="NoImage" height="50%" width="50%">
+</a>
+<p>
+    <a href="#">Dog Image From NetEase</a>
+</p>
+<p id="copy">
+&copy;NetEase2020
+</p>
+
+
+</body>
+</html>
