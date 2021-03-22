@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+        /*相对定位；对自己原来的位置进行偏移*/
+        #far{
+
+            border: 1px solid gray;
+        }
+        #fir{
+            background: #ced116;
+            border: 1px solid gray;
+            /*position: relative 表示相对位置*/
+            position: relative;
+            top: 10px;/*上边距增加10px即向下*/
+            left: 5px;/*左边距增加5px即向右*/
+            /*bottom  right */
+        }
+        #sec{
+            background: #62ffa4;
+            border: 1px solid gray;
+        }
+        #thr{
+            background: red;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<div id="far">
+    <div id="fir">box 1</div>
+    <div id="sec">box 2</div>
+    <div id="thr">box 3</div>
+</div>
+
+</body>
+</html>

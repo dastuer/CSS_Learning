@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            /*方案1增加父元素宽度 height: 60px;*/
+            border: 1px solid gray;
+        }
+        .clear{
+            clear: both;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            margin: 0 20px 10px 0;
+            width: 60px;
+            height: 20px;
+            font-weight: 50;
+            list-style: none;
+            border: 1px solid gray;
+            background: #37ce2e;
+            /*向左浮动*/
+            float: left;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .li1{
+            float: right;
+
+        }
+        .li2{
+            float: right;
+        }
+        /*clear: left|right|both 清楚浮动*/
+        .li3{
+
+        }
+        .li4{
+            clear: left;
+
+        }
+    </style>
+</head>
+<body>
+<div >
+    <ul>
+        <li class="li1">Term1</li>
+        <li class="li2">Term2</li>
+        <li class="li3">Term3</li>
+        <li class="li4">Term4</li>
+        <!-- 方案2增加空div标签-->
+        <div style="padding: 0;margin: 0;clear: both"></div>
+    </ul>
+</div>
+</body>
+</html>
