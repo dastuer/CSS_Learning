@@ -1,0 +1,32 @@
+#content{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    width: 800px;
+    border: 1px solid red;
+}
+li,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul{
+    position: relative;
+}
+.tipText,.tipBg{
+    position: absolute;
+    color: white;
+    width: 800px;
+    line-height: 25px;
+    top: 520px;
+    background: black;
+}
+.tipText{
+    /*-1图层，位于默认图层下面*/
+    z-index: -1;
+    /*opacity:0~1 设置透明度*/
+    opacity: 0.5;
+    /*filter: alpha(opacity=0.5); IE8之前浏览器设置透明度*/
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+        #far{
+
+            border: 1px solid gray;
+            /*父级元素存在相对定位*/
+            position: relative;
+        }
+        #fir{
+            background: #ced116;
+            border: 1px solid gray;
+        }
+        #sec{
+            background: #62ffa4;
+            border: 1px solid gray;
+            /*子元素绝对定位*/
+            position: absolute;
+            /*相对于父级边框*/
+            right: 10px;
+        }
+        #thr{
+            background: red;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<div id="far">
+    <div id="fir">box 1</div>
+    <div id="sec">box 2</div>
+    <div id="thr">box 3</div>
+</div>
+
+</body>
+</html>
